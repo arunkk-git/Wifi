@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#dadacf"
+    tools:context="tech.sree.com.wifi.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wifi Controller"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:id="@+id/banner"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Set the Time  for Wifi connection Turn-Off and Turn-On."
+        android:id="@+id/info"
+        android:layout_below="@+id/banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmON"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/wifilock"
+        android:layout_below="@+id/info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmOFF"
+        android:layout_alignTop="@+id/alarmON"
+        android:layout_toRightOf="@+id/banner"
+        android:layout_toEndOf="@+id/banner"
+        android:src="@drawable/wifiunlock" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:layout_marginTop="61dp"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/alarmON"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textColor="#00f"
+        android:id="@+id/fromText"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/alarmOFF"
+        android:layout_alignLeft="@+id/alarmON"
+        android:layout_alignStart="@+id/alarmON" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:id="@+id/toText"
+        android:textColor="#00f"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignTop="@+id/fromText"
+        android:layout_alignLeft="@+id/alarmOFF"
+        android:layout_alignStart="@+id/alarmOFF"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Confirm !!!"
+        android:textColor="#f00"
+        android:id="@+id/submitText"
+        android:layout_below="@+id/alarmON"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+</RelativeLayout>
