@@ -29,6 +29,7 @@
         android:layout_below="@+id/timePicker"
         android:layout_alignRight="@+id/timePicker"
         android:layout_alignEnd="@+id/timePicker"
-        android:shadowColor="#ffffff" />
+        android:shadowColor="#0911fb"
+        android:phoneNumber="true" />
 
 </RelativeLayout>

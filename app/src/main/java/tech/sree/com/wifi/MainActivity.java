@@ -23,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
         mySharedpreferences = getSharedPreferences(MyPREFERENCES, MODE_PRIVATE);
         fromTime = (TextView) findViewById(R.id.fromText);
         toTime = (TextView) findViewById(R.id.toText);
+
     }
+
     public void processOnClick(View V){
 
         switch (V.getId()){

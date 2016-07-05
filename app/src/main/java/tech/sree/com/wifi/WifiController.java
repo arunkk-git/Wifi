@@ -17,6 +17,7 @@ public class WifiController extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         performAction();
+        finish();
     }
     private void  performAction() {
 
@@ -46,6 +47,7 @@ public class WifiController extends AppCompatActivity {
     }
     public void toggleWiFi(boolean status) {
         if (status != wifiManager.isWifiEnabled()) {
+            L.p("toggleWiFi set = "+status);
             wifiManager.setWifiEnabled(status);
         }
 

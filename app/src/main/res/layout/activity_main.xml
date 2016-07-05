@@ -70,11 +70,10 @@
         android:textColor="#00f"
         android:id="@+id/fromText"
         android:onClick="processOnClick"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:layout_marginBottom="11dp"
+        android:textAppearance="?android:textAppearanceLarge"
         android:layout_above="@+id/alarmOFF"
-        android:layout_alignLeft="@+id/alarmON"
-        android:layout_alignStart="@+id/alarmON" />
+        android:layout_toLeftOf="@+id/submitText"
+        android:layout_toStartOf="@+id/submitText" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -83,12 +82,10 @@
         android:id="@+id/toText"
         android:onClick="processOnClick"
         android:textColor="#00f"
-        android:textAppearance="?android:textAppearanceMedium"
+        android:textAppearance="?android:textAppearanceLarge"
         android:layout_alignTop="@+id/fromText"
         android:layout_alignLeft="@+id/alarmOFF"
-        android:layout_alignStart="@+id/alarmOFF"
-        android:layout_marginLeft="23dp"
-        android:layout_marginStart="23dp" />
+        android:layout_alignStart="@+id/alarmOFF" />
 
     <TextView
         android:layout_width="wrap_content"

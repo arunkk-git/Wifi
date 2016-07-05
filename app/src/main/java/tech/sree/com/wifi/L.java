@@ -13,6 +13,6 @@ public class L {
         Toast.makeText(context,msg,Toast.LENGTH_LONG).show();
     }
     static void p(String msg){
-        Log.d("ARUN",msg);
+        Log.d("ARUNKK",msg);
     }
 }
